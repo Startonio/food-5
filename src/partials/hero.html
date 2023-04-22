@@ -10,13 +10,11 @@
       <button class="hero-btn" type="button">Order Now</button>
     </div>
     <div class="img-wrap">
-      <img
-        class="hero-photo"
-        src="./img/foto1.jpg"
-        alt="dish"
-        width="511"
-        height="511"
-      />
+      <picture>
+        <source srcset="./img/foto1.jpg" media="(min-width: 1280px)" />
+        <source srcset="./img/dish-tablet.jpg" media="(min-width: 768px)" />
+        <img src="./img/foto1.jpg" alt="dish" />
+      </picture>
     </div>
   </div>
 </section>

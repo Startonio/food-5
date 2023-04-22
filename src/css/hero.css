@@ -1,55 +1,108 @@
 .container {
-  width: 1280px;
-  padding: 0 16px;
+  /* width: 1280px; */
+  width: 320px;
+  /* padding: 0 16px; */
+  padding: 0 20px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+.img-wrap {
+  display: none;
 }
 
 .hero {
-  padding: 27px 0px;
+  padding: 60px 0;
 }
 
 .hero-title {
-  font-weight: 700px;
-  font-size: 48px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  line-height: 120%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
   color: #2c2c2c;
   margin-bottom: 28px;
-  text-align: left;
 }
-
 .hero-text {
-  font-weight: 400px;
-  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #2c2c2c;
-  line-height: 150%;
-  margin-bottom: 46px;
-  text-align: left;
+  margin-bottom: 28px;
 }
-
-.hero-photo {
+.hero-btn {
   display: block;
+  padding: 6px 18px;
+  background-color: #bbf330;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: right;
+  color: #2c2c2c;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
 }
 
-.text-wrap {
-  width: 516px;
-  height: 294px;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .text-wrap {
+    max-width: 336px;
+  }
+  .img-wrap {
+    display: block;
+  }
+  .hero-title {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 44px;
+  }
+  .hero-text {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .img-wrap {
+    width: 320px;
+    height: 320px;
+    border: 14px solid #ffe450;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
 }
 
-.img-wrap {
-  width: 560px;
-  height: 560px;
-  border: 14px solid #ffe450;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding: 27px 0px;
+  }
+  .container {
+    width: 1280px;
+    padding: 0 16px;
+  }
+
+  .text-wrap {
+    max-width: 515px;
+  }
+  .hero-title {
+    font-size: 48px;
+    margin-bottom: 28px;
+  }
+
+  .hero-text {
+    margin-bottom: 46px;
+    text-align: left;
+  }
+
+  .img-wrap {
+    width: 560px;
+    height: 560px;
+  }
 }

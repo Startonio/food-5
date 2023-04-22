@@ -1,11 +1,11 @@
 {
-  "name": "vite-blend-5-6",
+  "name": "food-5",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vite-blend-5-6/",
+    "build": "vite build --base=/food-5/",
     "preview": "vite preview"
   },
   "devDependencies": {
